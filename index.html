@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Order burgers, pizza and salads online" />
+
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Bestell App</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script type="module" src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <header class="header"></header>
+
+    <div id="basket-main">
+      <div id="basket-content">
+        <h2 class="basket-title">Your Basket</h2>
+
+        <ul id="basket-list"></ul>
+
+        <div id="basket-empty"><span>Nothing here yet...</span></div>
+        <div id="basket-footer">
+          <div class="flex-between">
+            <span>Subtotal: </span>
+            <span id="subtotal"></span>
+          </div>
+
+          <div class="flex-between">
+            <span>Delivery fee:</span>
+            <span id="delivery-sum"></span>
+          </div>
+
+          <hr class="basket-underline" />
+
+          <div class="flex-between">
+            <span>Total:</span><span id="total-sum"></span>
+          </div>
+          <div class="flex-center">
+            <button id="basket-button"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navigation" aria-label="Main-navigation">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html"
+            ><img
+              data-name="home"
+              data-hover="assets/icons/home-hover.svg"
+              src="assets/icons/home-default.svg"
+              alt="home"
+          /></a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html"
+            ><img
+              data-name="account"
+              data-hover="assets/icons/person-hover.svg"
+              src="assets/icons/person-default.svg"
+              alt="account"
+          /></a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html"
+            ><img
+              data-name="takeout"
+              data-hover="assets/icons/takeout-bag-hover.svg"
+              src="assets/icons/takeout-bag-default.svg"
+              alt="takeout bag"
+          /></a>
+        </li>
+        <li class="nav-item">
+          <button id="nav-cart">
+            <img
+              data-name="cart"
+              data-hover="assets/icons/shopping-cart-hover.svg"
+              src="assets/icons/shopping-cart-default.svg"
+              alt="shopping cart"
+            />
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-content">
+      <section id="hero-section">
+        <div class="hero-top">
+          <div class="hero-background"></div>
+          <img
+            class="hero-picture-burger"
+            src="assets/img/sheini-burger.webp"
+            alt="Burger"
+          />
+        </div>
+        <div class="hero-bottom">
+          <img src="assets/img/rating.png" alt="rating" />
+          <h1><span>Burger</span>House</h1>
+          <h2>
+            The best of Burgers, Pizza, and Greens, all in one great place.
+          </h2>
+        </div>
+      </section>
+
+      <section id="burger-section">
+        <div class="burger-headline">
+          <img src="assets/img/burger-2d.webp" alt="" />
+          <h2>Burger</h2>
+        </div>
+
+        <div id="burger-list"></div>
+      </section>
+
+      <section id="pizza-section">
+        <div class="pizza-headline">
+          <img src="assets/img/pizza-2d.webp" alt="" />
+          <h2>Pizza (30cm)</h2>
+        </div>
+
+        <div id="pizza-list"></div>
+      </section>
+
+      <section id="salad-section">
+        <div class="salad-headline">
+          <img src="assets/img/salad-2d.webp" alt="" />
+          <h2>Salad</h2>
+        </div>
+
+        <div id="salad-list"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="#">Imprint</a>
+      <a href="#">Cookie Preferences</a>
+      <div>
+        <img src="assets/icons/copyright.svg" alt="copyright" />
+        <p>2025 BurgerHouse</p>
+      </div>
+    </footer>
+  </body>
+</html>
